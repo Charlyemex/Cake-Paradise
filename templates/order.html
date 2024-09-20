@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>Order - Cake Paradise</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <h1 class="text-center my-5">Order Your Cake</h1>
+        <div class="row justify-content-center">
+            <div class="col-sm-6">
+                <form>
+                    <div class="form-group">
+                        <label for="cakeType">Type</label>
+                        <select id="cakeType" class="browser-default custom-select custom-select-md mb-3 name">
+                            <option value="Chocolate Delight">Chocolate Delight</option>
+                            <option value="Vanilla Dream">Vanilla Dream</option>
+                            <option value="Red Velvet">Red Velvet</option>
+                            <option value="Lemon Burst">Lemon Burst</option>
+                            <option value="Strawberry Bliss">Strawberry Bliss</option>
+                            <option value="Blueberry Cheesecake">Blueberry Cheesecake</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="size">Select Size</label>
+                        <select id="size" class="browser-default custom-select custom-select-md mb-3 size">
+                            <option selected value="0">Select size</option>
+                            <option value="Jumbo">Jumbo @NGN 9000</option>
+                            <option value="Large">Large @NGN 7000</option>
+                            <option value="Medium">Medium @NGN 5000</option>
+                            <option value="Small">Small @NGN 3000</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="crust">Crust</label>
+                        <select id="crust" class="browser-default custom-select custom-select-md mb-3 crust">
+                            <option selected value="0">Select crust</option>
+                            <option value="thin">Thin @NGN 1000</option>
+                            <option value="double">Double @NGN 2000</option>
+                            <option value="crispy">Crispy @NGN 3000</option>
+                            <option value="gluten-free">Gluten-free @NGN 4000</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="toppings">Toppings</label>
+                        <select id="toppings" class="browser-default custom-select custom-select-md mb-3 toppings">
+                            <option selected value="0">Select topping</option>
+                            <option value="Jalapeno">Jalapeno @NGN 500</option>
+                            <option value="bacon">Bacon @NGN 500</option>
+                            <option value="cheese">Cheese @NGN 500</option>
+                            <option value="mushroom">Mushroom @NGN 500</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="total">Total</label>
+                        <input type="text" id="total" class="form-control" readonly>
+                    </div>
+                    <button type="submit" class="btn btn-outline-danger submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const cakeTypeElement = document.getElementById('cakeType');
+            const sizeElement = document.getElementById('size');
+            const crustElement = document.getElementById('crust');
+            const toppingsElement = document.getElementById('toppings');
+            const totalElement = document.getElementById('total');
+            
+            function calculateTotal() {
+                let total = 0;
+                
+                // Get the selected size price
+                const sizePrice = sizeElement.options[sizeElement.selectedIndex].text.match(/@NGN (\d+)/);
+                if (sizePrice) {
+                    total += parseInt(sizePrice[1]);
+                }
+                
+                // Get the selected crust price
+                const crustPrice = crustElement.options[crustElement.selectedIndex].text.match(/@NGN (\d+)/);
+                if (crustPrice) {
+                    total += parseInt(crustPrice[1]);
+                }
+                
+                // Get the selected toppings price
+                const toppingPrice = toppingsElement.options[toppingsElement.selectedIndex].text.match(/@NGN (\d+)/);
+                if (toppingPrice) {
+                    total += parseInt(toppingPrice[1]);
+                }
+                
+                // Update the total field
+                totalElement.value = `NGN ${total}`;
+            }
+            
+            // Add event listeners to calculate the total whenever an option is changed
+            sizeElement.addEventListener('change', calculateTotal);
+            crustElement.addEventListener('change', calculateTotal);
+            toppingsElement.addEventListener('change', calculateTotal);
+        });
+    </script>
+</body>
+
+</html>
+

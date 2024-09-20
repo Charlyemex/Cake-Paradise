@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="css/izmir.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <title>CAKE PARADISE</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        .overflow-hidden {
+            overflow: hidden;
+        }
+        .navbar {
+            margin-bottom: 0;
+        }
+        .hero {
+            background: url(<img src="Cake-Images/Cake Paradise Background.jpg" alt="Cake Paradise") no-repeat center center/cover;
+            height: 100vh;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+        }
+        .hero p {
+            font-size: 1.5em;
+        }
+        .hero .btn {
+            margin-top: 1em;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+        }
+        .testimonial {
+            background: #f9f9f9;
+            padding: 3em 0;
+        }
+        .testimonial .carousel-item {
+            text-align: center;
+        }
+        .footer {
+            background: #343a40;
+            color: white;
+            padding: 2em 0;
+        }
+        .footer a {
+            color: #f8f9fa;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Cake Paradise</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#order">Order</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div>
+            <h1>Welcome to Cake Paradise</h1>
+            <p>Indulge in our delicious and freshly baked cakes</p>
+            <a href="#menu" class="btn btn-primary btn-lg">Explore Our Menu</a>
+        </div>
+    </div>
+
+    <!-- Shop Description -->
+    <div class="container-fluid">
+        <div class="card text-center crd mx-auto mt-5">
+            <div class="card-body">
+                <h1 class="card-body1 overflow-hidden">CAKE PARADISE</h1>
+                <p>...is a contemporary shop situated at the
+                    University of Nigeria Nsukka Campus<br>in Enugu State.
+                    Our guests enjoy a variety of delicious cakes
+                    <br>from the<em> Chocolate Delight</em> to <em>Vanilla Dream</em>.
+                    We offer a cozy and perfect environment<br> for lazy lunches
+                    or for larger events like corporate meetings or even<br>
+                    live bands sometimes. Come and enjoy our live music band
+                    over bites of cakes.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cake Types -->
+    <div class="container-fluid mb-3">
+        <h1 class="cake-types mb-4 overflow-hidden">OUR CAKES</h1>
+        <div id="head" class="py-4">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                    <div class="card img-fluid mx-auto mb-3" style="width:250px" id="chocolate-delight">
+                        <figure class="c4-izmir c4-border-centre" style="width:250px">
+                            <img class="card-img-top img-fluid" src="Cake-Images/Chocolate Delight Cake.jpeg" alt="Chocolate Delight Cake"
+                                style="width:100%">
+                            <figcaption class="c4-reveal-left c4-delay-200">
+                                <h3 class="overflow-hidden">
+                                    Chocolate Delight
+                                </h3>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                    <div class="card img-fluid mx-auto mb-3" style="width:250px" id="vanilla-dream">
+                        <figure class="c4-izmir c4-border-centre" style="width:250px">
+                            <img class="card-img-top img-fluid" src="Cake-Images/Vanilla Dream Cake.jpg" alt="Vanilla Dream Cake"
+                                style="width:100%">
+                            <figcaption class="c4-reveal-left c4-delay-200">
+                                <h3 class="overflow-hidden">
+                                    Vanilla Dream
+                                </h3>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                    <div class="card img-fluid mx-auto mb-3" style="width:250px" id="red-velvet">
+                        <figure class="c4-izmir c4-border-centre" style="width:250px">
+                            <img class="card-img-top img-fluid" src="Cake-Images/Red Velvet Cake.jpg" alt="Red Velvet Cake"
+                                style="width:100%">
+                            <figcaption class="c4-reveal-left c4-delay-200">
+                                <h3 class="overflow-hidden">
+                                    Red Velvet
+                                </h3>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                    <div class="card img-fluid mx-auto mb-3" style="width:250px" id="lemon-burst">
+                        <figure class="c4-izmir c4-border-centre" style="width:250px">
+                            <img class="card-img-top img-fluid" src="Cake-Images/Lemon Burst Cake.jpg" alt="Lemon Burst Cake"
+                                style="width:100%">
+                            <figcaption class="c4-reveal-left c4-delay-200">
+                                <h3 class="overflow-hidden">
+                                    Lemon Burst
+                                </h3>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                    <div class="card img-fluid mx-auto mb-3" style="width:250px" id="strawberry-bliss">
+                        <figure class="c4-izmir c4-border-centre" style="width:250px">
+                            <img class="card-img-top img-fluid" src="Cake-Images/Strawberry Cake.jpeg" alt="Strawberry Bliss Cake"
+                                style="width:100%">
+                            <figcaption class="c4-reveal-left c4-delay-200">
+                                <h3 class="overflow-hidden">
+                                    Strawberry Bliss
+                                </h3>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                    <div class="card img-fluid mx-auto mb-3" style="width:250px" id="blueberry-cheesecake">
+                        <figure class="c4-izmir c4-border-centre" style="width:250px">
+                            <img class="card-img-top img-fluid" src="Cake-Images/blueberry cheese cake.jpg" alt="Blueberry Cheesecake"
+                                style="width:100%">
+                            <figcaption class="c4-reveal-left c4-delay-200">
+                                <h3 class="overflow-hidden">
+                                    Blueberry Cheesecake
+                                </h3>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu Section -->
+    <div class="container-fluid">
+        <div class="card">
+            <h1 class="cake-types overflow-hidden mt-5" id="menu">MENU</h1>
+            <div class="card-body crd mx-auto">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-6">
+                        <h1 class="menu overflow-hidden" id="matam">CAKE PARADISE</h1>
+                        <h1 class="menu overflow-hidden" id="matam">RESTAURANT</h1>
+                        <p class="menu" id="authen">For your delicious and freshly baked cakes</p>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6">
+                        <img src="Cake-Images/Cake Paradise Background.jpg" class="img-fluid" width="250px">
+                    </div>
+                </div>
+                <div class="row1">
+                    <h3 class="title overflow-hidden"><strong>Chocolate Delight</strong></h3>
+                    <p>Rich chocolate cake with layers of creamy chocolate ganache.</p>
+                    <h3 class="title overflow-hidden"><strong>Vanilla Dream</strong></h3>
+                    <p>Classic vanilla cake with a light and fluffy vanilla buttercream frosting.</p>
+                    <h3 class="title overflow-hidden"><strong>Red Velvet</strong></h3>
+                    <p>Moist red velvet cake with a hint of cocoa and cream cheese frosting.</p>
+                    <h3 class="title overflow-hidden"><strong>Lemon Burst</strong></h3>
+                    <p>Refreshing lemon cake with tangy lemon curd filling and lemon buttercream.</p>
+                    <h3 class="title overflow-hidden"><strong>Strawberry Bliss</strong></h3>
+                    <p>Delicious strawberry cake with layers of fresh strawberry filling and strawberry frosting.</p>
+                    <h3 class="title overflow-hidden"><strong>Blueberry Cheesecake</strong></h3>
+                    <p>Decadent cheesecake with a graham cracker crust and blueberry topping.</p>
+                </div>
+                <div class="row1">
+                    <h2 class="title text-center"><strong>PRICES</strong></h2>
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12">
+                            <ul>
+                                <li>Small @ NGN. 3000</li>
+                                <li>Medium @ NGN. 5000</li>
+                                <li>Large @ NGN. 7000</li>
+                                <li>Jumbo @ NGN. 9000</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Order Section -->
+    <div class="container-fluid align-items-center text-center" id="order">
+        <h1 class="cake_order overflow-hidden">Let's order you a cake!</h1>
+        <div class="card mycard mx-auto">
+            <div class="card-body formCard border-0">
+                <form class="mx-auto">
+                    <div class="form-group text-center myform">
+                        <label for="CakeType">Cake Type</label>
+                        <select class="form-control text-center" id="cakeflavour">
+                            <option>Choose Cake Type</option>
+                            <option value="0">Chocolate Delight</option>
+                            <option value="0">Vanilla Dream</option>
+                            <option value="0">Red Velvet</option>
+                            <option value="0">Lemon Burst</option>
+                            <option value="0">Strawberry Bliss</option>
+                            <option value="0">Blueberry Cheesecake</option>
+                        </select>
+                    </div>
+                    <div class="form-group text-center myform">
+                        <label for="size">Size</label>
+                        <select class="form-control text-center" id="cakesize">
+                            <option>Choose Cake Size</option>
+                            <option value="3000">Small @ NGN. 3000</option>
+                            <option value="5000">Medium @ NGN. 5000</option>
+                            <option value="7000">Large @ NGN. 7000</option>
+                            <option value="9000">Jumbo @ NGN. 9000</option>
+                        </select>
+                    </div>
+                    <div class="form-group text-center myform">
+                        <label for="Crust">Choose Type of Crust</label>
+                        <select class="form-control text-center" id="cakecrust" name="cake">
+                            <option>Select Cake Crust</option>
+                            <option value="1000">Thin Crust @ NGN. 1000</option>
+                            <option value="2000">Thick/Double Crust @ NGN. 2000</option>
+                            <option value="3000">Crispy Crust @ NGN. 3000</option>
+                            <option value="4000">Gluten-free Crust @ NGN. 4000</option>
+                        </select>
+                    </div>
+                    <div class="form-group text-center myform">
+                        <label for="Toppings">Choose Topping</label>
+                        <select class="form-control text-center" id="caketopping">
+                            <option>Select Cake Toppings</option>
+                            <option value="500">Jalapeno Toppings @ NGN.500 </option>
+                            <option value="500">Bacon Toppings @ NGN. 500</option>
+                            <option value="500">Cheese Toppings @ NGN. 500</option>
+                            <option value="500">Mushroom Toppings @ NGN. 500</option>
+                        </select>
+                    </div>
+                    <div class="form-group myform">
+                        <label for="number">Number of Cakes</label>
+                        <input type="number" class="form-control text-center" id="number" placeholder="Number of cakes"
+                            min="1" required>
+                    </div>
+                </form>
+                <div class="text-center p-5 form-bottom mx-auto">
+                    <button id="pick-up" type="button" class="btn btn-success mybtn">PICK UP</button>
+                </div>
+                <div class="text-center form-bottom mx-auto">
+                    <button id="make-delivery" type="button" class="btn btn-info mybtn">MAKE DELIVERY</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="container-fluid" id="contact">
+        <div class="card text-center crd mx-auto mt-5">
+            <div class="card-body">
+                <h1 class="overflow-hidden">Contact Us</h1>
+                <p>For inquiries and feedback, please contact us at:</p>
+                <p>Email: info@cakeparadise.com</p>
+                <p>Phone: +234 903 147 7607/ +234 703 309 9165</p>
+                <p>Address: University of Nigeria Nsukka Campus, Enugu State</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer text-center">
+        <p>&copy; 2024 Cake Paradise. All Rights Reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPl
+

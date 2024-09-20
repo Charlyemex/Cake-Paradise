@@ -1,0 +1,132 @@
+/* Reset and global styles */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inria Serif', serif;
+}
+
+/* Container styles */
+.container-fluid {
+    overflow-x: hidden;
+}
+
+/* Parallax background */
+.container-fluid .parallax {
+    background: url("../images/background.jpeg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 1000px;
+}
+
+.container-fluid .parallax .img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 250px;
+    height: 250px;
+    margin-top: -125px; /* Half the height to center */
+    margin-left: -125px; /* Half the width to center */
+}
+
+/* Menu styles */
+.menu, .row1 {
+    font-family: 'Fruktur', cursive;
+    font-size: 22px;
+}
+
+.menu {
+    padding-top: 3%;
+}
+
+/* Title styles */
+#matam, .title {
+    color: rgb(190, 108, 78);
+}
+
+/* Authentication styles */
+#authen p {
+    color: rgb(125, 170, 125);
+    font-size: 25px;
+}
+
+/* Card styles */
+.card {
+    text-align: center;
+}
+
+.card.mycard {
+    max-width: 998px;
+}
+
+.card-body.formCard {
+    width: 100%;
+}
+
+.card-body,
+.cake-types {
+    font-family: 'Girassol', cursive;
+    font-size: 25px;
+    text-align: center;
+}
+
+.cake-types {
+    font-size: 42px;
+    color: rgb(4, 4, 85);
+}
+
+/* Header styles */
+#head {
+    background-color: transparent;
+    background-image: url("../images/background2.jpeg"), linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 0;
+    padding-top: 1%;
+    margin-top: -1%;
+}
+
+/* Individual card styles */
+.crd {
+    margin: 6%;
+    background-image: url("../images/menu.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.c4 {
+    border: 1px solid white;
+}
+
+/* Form and input styles */
+.mycard, #order {
+    align-items: center;
+}
+
+#order form,
+.form-bottom {
+    /* Styles for form and form-bottom sections */
+}
+
+.cake_order {
+    font-family: 'Girassol', cursive;
+    color: rgb(4, 4, 85);
+}
+
+input#number.form-control.text-center {
+    text-align: start !important;
+}
+
